@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import renderimport logging               
+import django                
+from django.http import JsonResponse   
+from django.conf import settings      
 
-# Create your views here.
+from rest_framework.views import APIView     
+from rest_framework.response import Response 
