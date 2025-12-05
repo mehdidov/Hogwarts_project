@@ -19,7 +19,12 @@ from django.contrib import admin
 from django.urls import path, include 
 
 urlpatterns = [
+
     path("admin/", admin.site.urls),
+    
+    # URL of rooms
     path('rooms/', include('room.urls'))
+
+    # URL of bookings
     path('bookings/', include('bookings.urls'))
 ]

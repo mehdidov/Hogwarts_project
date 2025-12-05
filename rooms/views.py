@@ -5,3 +5,7 @@ from django.conf import settings
 
 from rest_framework.views import APIView     
 from rest_framework.response import Response 
+
+def list_room(request):
+    rooms = Room
+    
